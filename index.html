@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Centralized Exchange Form</h1>
+    <p id="description">Thank you for taking the time to complete this short form regarding centralized exchanges!</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" required placeholder="Enter your name">
+
+        <label id="email-label" for="email">Email</label>
+        <input id="email" required type="email" placeholder="Enter your email">
+
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" min="18" max="100" placeholder="Enter your age">
+
+        <label id="dropdown-label" for="dropdown">Do you own any cryptocurrency?</label>
+        <select id="dropdown">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <label id="radio-label">Do you store your cryptocurrency in a centralized exchange</label>
+        <div class="radio-group">
+            <label id="yes-label" for="yes">Yes</label>
+            <input id="yes" type="radio" name="option" value="1">
+            <label id="no-label" for="no">No</label>
+            <input id="no" type="radio" name="option" value="0">
+        </div>
+
+        <p>Which of the following exchanges have you heard of?</p>
+        <div class="checkbox-group">
+            <label id="binance-label" for="binance">Binance</label>
+            <input id="binance" type="checkbox" value="binance">
+            <label id="coinbase-label" for="coinbase">Coinbase</label>
+            <input id="coinbase" type="checkbox" value="coinbase">
+            <label id="okx-label" for="okx">OKX</label>
+            <input id="okx" type="checkbox" value="okx">
+        </div>
+
+        <label id="textarea-label" for="comments">Please feel free to leave any additional comments!</label>
+        <textarea id="comments">Enter comments here...</textarea>
+
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
